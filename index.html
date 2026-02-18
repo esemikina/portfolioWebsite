@@ -1,8 +1,17 @@
-<!-- DEPLOY TEST: IT WORKS -->
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
+    <title>Yelizaveta’s Portfolio</title>
+    <!-- Primary -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+    <!-- Fallbacks -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+
+
     <!-- META -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -41,13 +50,13 @@
 
 <body>
     <!-- START PRELOADER AREA-->
-    <div id="preloader-area">
+    <!-- <div id="preloader-area">
         <div class="loader">
             <div class="bounce1"></div>
             <div class="bounce2"></div>
             <div class="bounce3"></div>
         </div>
-    </div>
+    </div> -->
     <!-- END PRELOADER AREA -->
 
     <!-- START HOMEPAGE DESIGN AREA -->
@@ -99,47 +108,28 @@
                 </div>
             </div>
         </div>
-        <div class="welcome-image-area" data-stellar-background-ratio="0.6">
-            <div class="display-table">
-                <div class="display-table-cell">
-                    <div class="container">
-                        <div class="row header-part">
-                            <div class="col-md-6">
-                                <div class="header-text">
-                                    <img src="assets/images/me.png" alt="">
-                                    <h2>Yelizaveta Semikina <br> <span>Data Scientist</span></h2>
-                                    <p>I build data-driven tools and analytics pipelines for healthcare, research, 
-                                        and product teams: from clinical speech analysis to real-world user insights.
-                                        
-                                    </p>
-                                    <!-- <div class="header-social-links">
-                                        <ul>
-                                            <li><a href=""><i class="fa fa-facebook facebook"></i></a>
-                                            </li>
-                                            <li><a href=""><i class="fa fa-twitter twitter"></i></a>
-                                            </li>
-                                            <li><a href=""><i class="fa fa-dribbble dribbble"></i></a>
-                                            </li>
-                                            <li><a href=""><i class="fa fa-instagram instagram"></i></a>
-                                            </li>
-                                        </ul>
-                                    </div> -->
-                                    <div class="home-arrow-down">
-                                        <a href="#about" class="smoth-scroll btn"><i
-                                                class="fa fa-angle-double-down"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="header-right text-right">
-                                    <img src="IMG_8702.png" alt="">
-                                </div>
-                            </div>
+        <div class="welcome-image-area">
+            <div class="container">
+                <div class="row header-part">
+
+                    <div class="col-md-6 col-sm-6">
+                        <div class="header-text">
+                            <h2>Yelizaveta Semikina <br> <span>Data Scientist</span></h2>
+                            <p>
+                                I build data-driven tools and analytics pipelines for healthcare, research, and product teams: 
+                                from clinical speech analysis to real-world user insights.
+                            </p>
                         </div>
                     </div>
+
+                    <div class="col-md-6 hero-image">
+                        <img src="IMG_8702.png" alt="">
+                    </div>
+
                 </div>
             </div>
         </div>
+
     </header>
     <!-- / END HOMEPAGE DESIGN AREA -->
 
@@ -150,34 +140,36 @@
         <div class="container">
             <div class="row">
                 <ul class="work">
-                    <li class="filter" data-filter="all">all</li>
-                    <li class="filter" data-filter=".Research">Clinical Speech Analytics</li>
-                    <li class="filter" data-filter=".development">UI Health Internship</li>
-                    <li class="filter" data-filter=".photography">Applied AI Research</li>                    
-                    <li class="filter" data-filter=".photography">Clinical Data Analysis</li>
+                    <li class="filter active" data-filter="all">All</li>
+                    <li class="filter" data-filter=".research">Speech Analytics</li>
+                    <li class="filter" data-filter=".uihealth">UI Health Internship</li>
+                    <li class="filter" data-filter=".ai">Applied AI Research</li>
+                    <li class="filter" data-filter=".clinical">Clinical Data Analysis</li>
+                    <li class="filter" data-filter=".calcium">Calcium Imaging Research</li>
+
                 </ul>
             </div>
             <div class="work-inner">
                 <div class="row work-posts grid">
                     <!-- START SINGLE WORK DESIGN AREA -->
-                    <div class="col-md-6 col-sm-6 mix webdesign">
+                    <div class="col-md-4 col-sm-6 mix research">
                         <div class="item">
-                            <a href="wave.png" class="work-popup">
+                            <a href="#" data-toggle="modal" data-target="#clinicalSpeechModal">
                                 <figure class="effect-bubba">
-                                    <img src="wave.png" alt="image">
-                                    <figcaption>
-                                        <h2>Clinical   Speech   Analytics</h2>
-                                        <p>Graduate Research Assistant</p>
-                                    </figcaption>
+                                <img src="wave.png" alt="Speech Analytics">
+                                <figcaption>
+                                    <h2>Speech Analytics</h2>
+                                    <p>Graduate Research Assistant</p>
+                                </figcaption>
                                 </figure>
                             </a>
                         </div>
                     </div>
                     <!-- END SINGLE WORK DESIGN AREA -->
                     <!-- START SINGLE WORK DESIGN AREA -->
-                    <div class="col-md-6 col-sm-6 mix development">
+                    <div class="col-md-4 col-sm-6 mix uihealth">
                         <div class="item">
-                            <a href="UI.png" class="work-popup">
+                            <a href="#" data-toggle="modal" data-target="#uiHealthModal">
                                 <figure class="effect-bubba">
                                     <img src="UI.png" alt="image">
                                     <figcaption>
@@ -190,9 +182,9 @@
                     </div>
                     <!-- END SINGLE WORK DESIGN AREA -->
                     <!-- START SINGLE WORK DESIGN AREA -->
-                    <div class="col-md-6 col-sm-6 mix photography webdesign">
+                    <div class="col-md-4 col-sm-6 mix ai">
                         <div class="item">
-                            <a href="AI.png" class="work-popup">
+                            <a href="#" data-toggle="modal" data-target="#aiResearchModal">
                                 <figure class="effect-bubba">
                                     <img src="AI.png" alt="image">
                                     <figcaption>
@@ -203,25 +195,40 @@
                             </a>
                         </div>
                     </div>
+            </div>
                     <!-- END SINGLE WORK DESIGN AREA -->
                     <!-- START SINGLE WORK DESIGN AREA -->
-                    <div class="col-md-6 col-sm-6 mix development">
+                     <div class="row work-posts grid">
+                        <div class="col-md-4 col-md-offset-2 col-sm-6 mix clinical">
+                            <div class="item">
+                                <a href="#" data-toggle="modal" data-target="#clinicalDataModal">
+                                    <figure class="effect-bubba">
+                                        <img src="clin.png" alt="image">
+                                        <figcaption>
+                                            <h2>Clinical Data Analysis</h2>
+                                            <p>Data Analyst Intern</p>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 mix calcium">
                         <div class="item">
-                            <a href="clin.png" class="work-popup">
-                                <figure class="effect-bubba">
-                                    <img src="clin.png" alt="image">
-                                    <figcaption>
-                                        <h2>Clinical Data Analysis</h2>
-                                        <p>Data Analyst Intern</p>
-                                    </figcaption>
-                                </figure>
+                            <a href="#" data-toggle="modal" data-target="#calciumImagingModal">
+                            <figure class="effect-bubba">
+                                <img src="neuro.png" alt="Calcium Imaging Research">
+                                <figcaption>
+                                <h2>Calcium Imaging Research</h2>
+                                <p>Neuroscience Researcher</p>
+                                </figcaption>
+                            </figure>
                             </a>
+                        </div>
                         </div>
                     </div>
                     <!-- END SINGLE WORK DESIGN AREA -->
                 </div>
-            </div>
-        </div>
+         </div>
     </section>
     <!-- / END START WORK DESIGN AREA -->
 
@@ -526,6 +533,178 @@
         }
     });
     </script>
+
+<div class="modal fade" id="clinicalSpeechModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h3 class="modal-title">Speech Analytics</h3>
+        <button type="button" class="close" data-dismiss="modal">
+          <span>&times;</span>
+        </button>
+      </div>
+
+      <div class="modal-body">
+
+        <!-- Project Overview -->
+        <div class="project-section">
+          <h4 class="section-heading">Project Overview</h4>
+          <p>
+            Built a clinical speech analysis pipeline to identify acoustic and 
+            linguistic biomarkers associated with neurological and speech-related 
+            conditions. The project focused on transforming raw audio recordings 
+            into structured, interpretable clinical metrics.
+          </p>
+        </div>
+
+        <!-- What I Did -->
+        <h4>What I did</h4>
+        <ul>
+          <li>Extracted acoustic & prosodic features (MFCCs, pitch, tempo)</li>
+          <li>Built ML models for classification and prediction</li>
+          <li>Processed and validated real-world clinical datasets</li>
+          <li>Collaborated with clinicians on interpretation</li>
+        </ul>
+
+        <!-- Tools -->
+        <h4>Tools</h4>
+        <p>Python, Librosa, NumPy, Pandas, Scikit-learn</p>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="uiHealthModal" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h3 class="modal-title">UI Health Internship</h3>
+        <button type="button" class="close" data-dismiss="modal">
+          <span>&times;</span>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <h4>Project Overview</h4>
+        <p>
+          Developed healthcare application features improving data visibility for clinical users.
+        </p>
+
+        <h4>What I did</h4>
+        <ul>
+          <li>Built React + SQL features for 50+ clinical users</li>
+          <li>Reduced iteration cycles by ~30%</li>
+          <li>Translated clinical requirements into working prototypes</li>
+          <li>Collaborated across technical & medical teams</li>
+        </ul>
+
+        <h4>Tools</h4>
+        <p>React, JavaScript, SQL</p>
+      </div>
+
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="aiResearchModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h3 class="modal-title">UIC AI Lab</h3>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        <h4>Project Overview</h4>
+        <p>
+          Contributed to supervised computer vision model development by 
+          evaluating image datasets and supporting model training optimization.
+        </p>
+
+        <h4>What I did</h4>
+        <ul>
+          <li>Evaluated and compared 100+ images for supervised model training</li>
+          <li>Assessed dataset quality and labeling consistency</li>
+          <li>Compared accuracy across multiple computer vision models</li>
+          <li>Supported performance optimization and model refinement</li>
+        </ul>
+
+        <h4>Tools</h4>
+        <p>Python, Computer Vision Models, Supervised Learning</p>
+      </div>
+
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="clinicalDataModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h3 class="modal-title">Independent Study Researcher</h3>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        <h4>Project Overview</h4>
+        <p>
+          Conducted statistical analysis on baseline data from a heart-failure 
+          mHealth clinical trial to examine predictors of self-care behaviors 
+          and patient health outcomes.
+        </p>
+
+        <h4>What I did</h4>
+        <ul>
+          <li>Analyzed baseline data from N = 89 participants</li>
+          <li>Investigated predictors of self-care and health status</li>
+          <li>Performed statistical modeling using Python</li>
+          <li>Worked with 6 validated clinical instruments (SCHFI, KCCQ, PHQ-9, MoCA, Charlson, DHFKS)</li>
+        </ul>
+
+        <h4>Tools</h4>
+        <p>Python, Statistical Modeling, Clinical Data Analysis</p>
+      </div>
+
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="calciumImagingModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h3 class="modal-title">Hippocampal Calcium Imaging Research</h3>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        <h4>Project Overview</h4>
+        <p>
+          Investigated spatial reorientation and context recognition in CA1 using calcium imaging data.
+        </p>
+
+        <h4>What I did</h4>
+        <ul>
+          <li>Analyzed 200+ neurons across 10+ mice</li>
+          <li>Computed representational similarity matrices (RSMs)</li>
+          <li>Applied non-negative matrix factorization (NMF)</li>
+          <li>Built supervised learning models for behavioral prediction</li>
+        </ul>
+
+        <h4>Tools</h4>
+        <p>Python, MATLAB, Machine Learning, Neural Data Analysis</p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
 </body>
 
 </html>
